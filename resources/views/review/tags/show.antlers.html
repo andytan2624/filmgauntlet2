@@ -1,0 +1,11 @@
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-8xl font-black text-center">{{ title }}</h1>
+    {{ entries paginate="4" as="reviews" }}
+        <div class="grid grid-flow-row grid-cols-2 gap-8 mt-16">
+
+            {{ reviews }}
+            {{ partial:review/card }}
+            {{ /reviews }}
+        </div>
+    {{ /entries }}
+</div>

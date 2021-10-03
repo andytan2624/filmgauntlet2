@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <title>{{ meta_title ?? title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="{{ title }}">
+    <meta name="description" content="{{ meta_description }}">
+
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body class="bg-white font-sans leading-normal text-black">
+
+    {{ partial:nav }}
+
+    {{ template_content }}
+<script src="/js/site.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+name: Andy
+super: true
+avatar: LeeYu.png
+id: 3b708f55-736a-4c5e-87c0-f4d8e7148877
+password_hash: $2y$10$19gIFXTV8CYCxshZViMkFe586fis4nAByqm8fDvAXkIU1wETQjgt2
+preferences:
+  favorites:
+    -
+      name: 'Edit Blueprint'
+      url: users/blueprint

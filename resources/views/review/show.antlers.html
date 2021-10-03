@@ -1,0 +1,31 @@
+<div class="max-w-2xl mx-auto">
+    <h1 class="text-6xl font-black leading-none text-left">{{ title }}</h1>
+    <div class="flex space-x-3 mt-8 text-xs font-semibold tracking-widest uppercase">
+        {{ tags }}
+            <a href="{{ url }}" class="bg-black hover:bg-red-800 text-white px-3 py-px">{{ title }}</a>
+        {{ /tags }}
+    </div>
+    <img src="{{ featured_image }}" alt="{{ featured_image:alt }}" class="my-2">
+    <div class="flex items-center my-16">
+        <img src="{{ author:avatar }}" alt="{{ author:name }}" class="h-12 w-12 rounded-full">
+        <div class="leading-tight ml-3">
+            <p class="font-bold">{{ author:name }}</p>
+            <p class="text-sm text-gray-600">{{ date }}</p>
+        </div>
+    </div>
+    <article class="space-y-12 mb-12 content max-w-2xl mx-auto">
+        {{ blog_content }}
+    </article>
+    <aside class="border-t-8 border-black my-24 py-8 max-w-2xl mx-auto">
+        {{ if related_reviews }}
+            <h3 class="text-2xl font-black">Related Reviews</h3>
+
+            <div class="grid grid-flow-row grid-cols-2 gap-8 mt-16">
+
+                {{ related_reviews }}
+                {{ partial:review/card hide_image="false" title_class="text-sm" }}
+                {{ /related_reviews }}
+            </div>
+        {{ /if }}
+    </aside>
+</div>
