@@ -11,6 +11,15 @@ sections:
           validate:
             - required
       -
+        handle: author
+        field:
+          max_items: 1
+          mode: select
+          display: Author
+          type: users
+          icon: users
+          listable: hidden
+      -
         handle: featured_image
         field:
           mode: grid
@@ -23,7 +32,7 @@ sections:
           icon: assets
           listable: hidden
       -
-        handle: blog_content
+        handle: plot
         field:
           always_show_set_button: false
           buttons:
@@ -38,38 +47,234 @@ sections:
             - anchor
             - image
             - table
-            - h1
-            - h4
-            - h5
-            - h6
-            - underline
-            - strikethrough
-            - code
-            - codeblock
-            - horizontalrule
-          container: assets
           save_html: false
           toolbar_mode: fixed
           link_noopener: false
           link_noreferrer: false
           target_blank: false
-          reading_time: true
+          reading_time: false
           fullscreen: true
           allow_source: true
           enable_input_rules: true
           enable_paste_rules: true
-          display: 'Blog Content'
+          display: Plot
+          type: bard
+          icon: bard
+          instructions: 'A brief summary of the movie'
+          listable: hidden
+      -
+        handle: my_history
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          display: 'My History'
           type: bard
           icon: bard
           listable: hidden
       -
-        handle: author
+        handle: public_perception
         field:
-          max_items: 1
-          mode: select
-          display: Author
-          type: users
-          icon: users
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          display: 'Public Perception'
+          type: bard
+          icon: bard
+          instructions: 'How the film was currently seen by the public then and now'
+          listable: hidden
+      -
+        handle: my_thoughts
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          display: 'My Thoughts'
+          type: bard
+          icon: bard
+          instructions: 'My thoughts on the movie'
+          listable: hidden
+      -
+        handle: fist_pump_moment
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          display: 'Fist Pump Moment'
+          type: bard
+          icon: bard
+          instructions: 'The best moment in the film'
+          listable: hidden
+      -
+        handle: most_valuable_player
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          display: 'Most Valuable Player'
+          type: bard
+          icon: bard
+          listable: hidden
+      -
+        handle: plus_ups
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          display: 'Plus Ups'
+          type: bard
+          icon: bard
+          instructions: 'Things that can be improved in the film'
+          listable: hidden
+      -
+        handle: final_thoughts
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          display: 'Final Thoughts'
+          type: bard
+          icon: bard
           listable: hidden
       -
         handle: related_reviews
@@ -99,6 +304,14 @@ sections:
           required: true
           validate:
             - required
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: select
   meta:
     display: Meta
     fields:

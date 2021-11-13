@@ -8,3 +8,9 @@ preferences:
     -
       name: 'Edit Blueprint'
       url: users/blueprint
+  collections:
+    review:
+      columns:
+        - title
+        - slug
+        - date
